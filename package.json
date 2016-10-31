@@ -1,0 +1,16 @@
+{
+  "name": "overseer-dash",
+  "version": "0.0.1",
+  "description": "Call overseer methods in response to Amazon Dash buttons",
+  "main": "app.js",
+  "scripts": {
+      "start": "sudo forever start app.js",
+      "stop": "sudo forever stop app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-dash-button": "^0.6.1",
+    "socket.io-client": "^1.5.1"
+  }
+}
