@@ -6,7 +6,7 @@ config.buttons.forEach(button => {
     let dash = dash_button(button.mac, null, null, 'all');
 
     dash.on('detected', () => {
-        socket.emit('lights/toggle', button.groupId);
+        socket.emit('lights:toggle', button.groupId);
     })
 });
 
